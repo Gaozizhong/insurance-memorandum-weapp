@@ -61,9 +61,8 @@ Page({
     const db = wx.cloud.database()
     const _ = db.command
     // 查询所有可以使用的羊毛
-    db.collection('wool').where({
-      status: true,
-      end: _.gt(new Date()),
+    db.collection('insurance-record').where({
+      
     }).get({
       success: res => {
         this.setData({

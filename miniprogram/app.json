@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/wool/wool",
+    "pages/insurance-record/insurance-record",
     "pages/publish/publish",
     "pages/mine/mine",
     "pages/login/login",
@@ -35,14 +35,14 @@
     "position": "bottom",
     "list": [
       {
-        "pagePath": "pages/wool/wool",
-        "text": "推荐",
+        "pagePath": "pages/insurance-record/insurance-record",
+        "text": "记录",
         "iconPath": "/images/tabbar/stuff.png",
         "selectedIconPath": "/images/tabbar/stuff-selected.png"
       },
       {
         "pagePath": "pages/publish/publish",
-        "text": "发布",
+        "text": "添加",
         "iconPath": "/images/tabbar/mall.png",
         "selectedIconPath": "/images/tabbar/mall-selected.png"
       },
