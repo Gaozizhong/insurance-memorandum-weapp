@@ -1,0 +1,15 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+    <view class='content-container'>
+        <image class='icon' src='/images/ic_launcher.png'/>
+        <text class='content' decode='{{true}}' space='true'>{{"羊毛备忘录：优惠信息共享平台，让用户利用好每一次优惠信息！\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;优惠通知、优惠跳转等功能即将开放。"}}</text>
+        <button bindgetuserinfo='onGetOpenid' open-type="getUserInfo" class='contact' type='primary'>登录</button>
+    </view>
+
+    <view class="weui-footer weui-footer_fixed-bottom">
+            <view class="weui-footer__links">
+                <navigator bindtap="callDeveleper" class="weui-footer__link">联系我们</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2019-2022 www.1949science.cn</view>
+    </view>
+</view>

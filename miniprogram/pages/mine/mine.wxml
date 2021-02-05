@@ -1,0 +1,10 @@
+<!--pages/mine/mine.wxml-->
+<view class='container'>
+
+    <view class='head-container'>
+        <view>
+            <l-avatar open-data="{{['userAvatarUrl','userNickName']}}" />
+        </view>
+    </view>
+
+</view>

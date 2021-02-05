@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText":"羊毛发布",
+  "usingComponents": {
+    "l-textarea":"../../miniprogram_npm/lin-ui/textarea/index",
+    "l-form": "../../miniprogram_npm/lin-ui/form/index",
+    "l-form-item": "../../miniprogram_npm/lin-ui/form-item/index",
+    "l-image-picker":"/dist/image-picker/index"
+  },
+  "enablePullDownRefresh": true
+}

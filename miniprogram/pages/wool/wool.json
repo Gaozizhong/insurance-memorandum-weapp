@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "l-card": "../../miniprogram_npm/lin-ui/card/index",
+    "mp-slideview": "weui-miniprogram/slideview/slideview"
+  },
+  "navigationBarTitleText": "羊毛推荐",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,8 @@
+<!--pages/wool-detail/wool-detail.wxml-->
+<view class='container'>
+
+    <block wx:key="_id" wx:for="{{WoolData.details}}" wx:for-item="detail">
+        <image class="detail" lazy-load="{{true}}" mode="widthFix" src="{{detail}}"></image>
+    </block>
+
+</view>

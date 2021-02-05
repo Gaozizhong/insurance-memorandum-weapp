@@ -1,0 +1,6 @@
+<!--components/wool/index.wxml-->
+<view bind:tap="onTap" class='container'>
+	<image mode='aspectFit' class='image' src='{{"https://1949science.cn:9004/assets/" + stuff.images[0]}}' />
+	<text class='title'>{{wool.title}}</text>
+	<text class='address'>{{wool.address}}</text>
+</view>

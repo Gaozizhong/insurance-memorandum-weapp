@@ -1,0 +1,60 @@
+<!--pages/publish/publish.wxml-->
+<view class='container'>
+    <view class='container'>
+        <form bindsubmit='onSubmitCreate'>
+            <view class='first-container row-container'>
+                <image class='icon' src='/images/tabbar/stuff-selected.png'></image>
+                <input class="input-area" name="wool_title" value='{{wool_title}}' maxlength="20" confirm-type="next"
+                    placeholder="优惠名称" />
+            </view>
+
+            <view class='info-container column-container'>
+                <l-textarea name="wool_introduction" maxlength="150" auto-height="True" border="{{false}}"
+                    value="{{wool_introduction}}" placeholder="介绍一下这个优惠吧~" />
+            </view>
+
+            <view class='info-container column-container'>
+                <l-image-picker bind:linchange="onChangeImage" bind:linremove="onChangeImage" count="9" custom="{{true}}" clear="{{clear}}">
+                    <view class='add'>
+                        <image class='add-icon' src='/images/icon/camera_add.png'></image>
+                        <text class='add-text'>选择图片</text>
+                    </view>
+                </l-image-picker>
+            </view>
+
+            <view class='info-container row-container'>
+                <image class='icon' src='/images/tabbar/stuff-selected.png'></image>
+                <text class="tag">标签：</text>
+                <input name="wool_tags" class="input-area" confirm-type="next" type="text" value='{{wool_tags}}'
+                    placeholder="请用逗号分隔每个标签" />
+            </view>
+
+            <view class='info-container row-container'>
+                <image class='icon' src='/images/tabbar/stuff-selected.png'></image>
+                <picker mode="date" value="{{start_date}}" start="2000-09-01" end="2050-09-01"
+                    bindchange="bindStartDateChange">
+                    <view class="weui-input"> 开始：{{start_date}}</view>
+                </picker>
+            </view>
+
+            <view class='info-container row-container'>
+                <image class='icon' src='/images/tabbar/stuff-selected.png'></image>
+                <picker mode="date" value="{{end_date}}" start="2000-09-01" end="2050-09-01"
+                    bindchange="bindEndDateChange">
+                    <view class="weui-input"> 结束：{{end_date}}</view>
+                </picker>
+            </view>
+
+            <view class='info-container row-container'>
+                <image class='icon' src='/images/tabbar/stuff-selected.png'></image>
+                <text class="tag">价值：</text>
+                <input name="wool_value" class="input-area" confirm-type="next" type="text" value='{{wool_value}}'
+                    placeholder="能省多少钱" />
+            </view>
+
+            <view class='last-container column-container'>
+                <button form-type="submit" class='button-ok' type='primary'>发布</button>
+            </view>
+        </form>
+    </view>
+</view>

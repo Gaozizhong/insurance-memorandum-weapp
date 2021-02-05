@@ -1,0 +1,18 @@
+<!--pages/wool/wool.wxml-->
+<view class='container'>
+    <view wx:if="{{WoolTotal==0}}" class='empty'>
+        <text>抱歉您的周边没有可使用的优惠</text>
+        <button type="primary" size="mini" bindtap="onJumpToPublish">发布</button>
+    </view>
+    <view wx:if="{{WoolTotal!=0}}" class="wool-list">
+        <block wx:key="_id" wx:for="{{WoolData}}" wx:for-item="wool">
+            <view id="{{wool._id}}" class="weui-slidecells" bind:tap="onJumpDetail">
+                <mp-slideview buttons="{{slideButtons}}" icon="{{true}}" bindbuttontap="slideButtonTap">
+                    <view class="weui-slidecell">
+                        {{wool.title}}
+                    </view>
+                </mp-slideview>
+            </view>
+        </block>
+    </view>
+</view>
