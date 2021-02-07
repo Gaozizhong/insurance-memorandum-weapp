@@ -63,7 +63,7 @@ Page({
     // 查询所有可以使用的羊毛
     db.collection('insurance-record').where({
       
-    }).get({
+    }).orderBy('create', 'desc').get({
       success: res => {
         this.setData({
           WoolData: res.data,

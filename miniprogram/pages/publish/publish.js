@@ -158,6 +158,7 @@ Page({
             const db = wx.cloud.database()
             db.collection('wool').add({
                 data: {
+                    create: new Date(),
                     title: wool_title,
                     introduction: wool_introduction,
                     details: images,
